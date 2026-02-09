@@ -1,20 +1,25 @@
 {
-  "name": "solid",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@baseline/solid",
+  "version": "0.1.0",
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist"
   },
   "dependencies": {
-    "solid-js": "^1.9.10"
+    "@baseline/core": "workspace:*",
+    "@baseline/css": "workspace:*",
+    "solid-js": "^1.9.11"
   },
   "devDependencies": {
-    "@types/node": "^24.10.1",
-    "typescript": "~5.9.3",
-    "vite": "^7.3.1",
-    "vite-plugin-solid": "^2.11.10"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   }
 }

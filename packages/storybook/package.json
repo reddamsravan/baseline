@@ -1,0 +1,25 @@
+{
+  "name": "@baseline/storybook",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "storybook": "pnpm storybook:react",
+    "storybook:react": "storybook dev -p 6006 -c .storybook-react",
+    "build-storybook": "pnpm build-storybook:react",
+    "build-storybook:react": "storybook build -c .storybook-react -o dist/react"
+  },
+  "dependencies": {
+    "@baseline/core": "workspace:*",
+    "@baseline/css": "workspace:*",
+    "@baseline/react": "workspace:*"
+  },
+  "devDependencies": {
+    "@storybook/addon-themes": "^10.2.8",
+    "@storybook/react-vite": "^10.2.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "storybook": "^10.2.8",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,7 +1,0 @@
-{
-    "compilerOptions": {
-        "module": "nodenext",
-        "types": ["vite/client", "node"]
-    },
-    "include": ["eslint.config.ts", "vite.config.ts", "stylelint.config.ts"]
-}

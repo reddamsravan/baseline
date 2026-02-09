@@ -1,30 +1,14 @@
 {
-  "name": "baseline",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "baseline-design-system",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.29.2",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "format": "prettier --write .",
-    "core": "pnpm --filter core",
-    "css": "pnpm --filter css"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.28.2",
-  "engines": {
-    "node": ">=24.13.0"
-  },
-  "type": "module",
-  "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@types/node": "^25.2.1",
-    "eslint": "^10.0.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.5",
-    "globals": "^17.3.0",
-    "jiti": "^2.6.1",
-    "prettier": "^3.8.1",
-    "typescript-eslint": "^8.54.0"
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "clean": "pnpm -r clean"
   }
 }

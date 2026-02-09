@@ -1,8 +1,9 @@
-/* @refresh reload */
-import { render } from 'solid-js/web'
-import './index.css'
-import App from './App.tsx'
+import type { Component } from 'solid-js';
 
-const root = document.getElementById('root')
+export type ButtonProps = {
+    label?: string;
+};
 
-render(() => <App />, root!)
+export const Button: Component<ButtonProps> = (props) => {
+    return <button class="baseline-button">{props.label ?? 'Button'}</button>;
+};
